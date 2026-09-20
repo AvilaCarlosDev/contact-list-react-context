@@ -1,0 +1,25 @@
+name: Error / Bug report
+description: Algo no funciona como debería / Something is not working as it should
+labels: [bug]
+body:
+  - type: textarea
+    id: descripcion
+    attributes:
+      label: Qué pasa / What happens
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Pasos para reproducirlo / Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Qué esperabas / What you expected
+  - type: input
+    id: entorno
+    attributes:
+      label: Entorno / Environment
+      description: Sistema, navegador o versión de Node / OS, browser or Node version
